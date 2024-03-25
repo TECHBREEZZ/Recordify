@@ -1,0 +1,104 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("stars.jpg"); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+
+.card {
+    width: 90%;
+    max-width: 450px;
+    border: 1px solid #444;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(238, 228, 228, 0.5); 
+    background-color: #333;
+    color: #fff;
+}
+
+.card-body {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.icons {
+    display: flex;
+}
+
+.icons i {
+    margin-left: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.settings {
+    padding: 20px;
+}
+
+.setting {
+    margin-bottom: 20px;
+}
+
+.setting h3 {
+    margin-bottom: 10px;
+}
+
+.input-field {
+    margin-bottom: 15px;
+}
+
+.input-field label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.input-field select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    background-color: #333;
+    box-shadow: 0 0 4px rgba(221, 216, 216, 0.5);
+}
+
+.start-recording {
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.start-recording button {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.start-recording button:hover {
+    background-color: #0056b3;
+}
+
+.start-recording p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #777;
+}
+

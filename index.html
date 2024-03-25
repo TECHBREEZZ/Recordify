@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recordify-app</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Include Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-body d-flex align-items-center">
+          <div class="logo mr-auto">
+            <img src="logo.png" alt="Recordify Logo" />
+          </div>
+          <div class="icons ml-auto">
+            <i class="fas fa-home"></i>
+            <i class="fas fa-cog"></i>
+          </div>
+        </div>
+
+        <!-- New div for settings -->
+        <div class="settings">
+          <div class="setting">
+            <h3>Recording Settings</h3>
+            <div class="input-field">
+              <label for="record-format">Format:</label>
+              <select id="record-format">
+                <option value="full-screen">
+                  <i class="fas fa-desktop"></i> Full screen
+                </option>
+                <option value="window">
+                  <i class="fas fa-window-maximize"></i> Window
+                </option>
+                <option value="tab"><i class="fas fa-browser"></i> Tab</option>
+                <option value="custom-area">
+                  <i class="fas fa-crop"></i> Custom area
+                </option>
+                <option value="screen-and-camera">
+                  <i class="fas fa-desktop"></i>
+                  <i class="fas fa-video"></i> Screen and Camera
+                </option>
+                <option value="camera-only">
+                  <i class="fas fa-video"></i> Camera Only
+                </option>
+              </select>
+            </div>
+
+            <div class="input-field">
+              <label for="audio-source">Audio Source:</label>
+              <select id="audio-source">
+                <option value="desktop">
+                  <i class="fas fa-desktop"></i> Desktop Audio
+                </option>
+                <option value="microphone">
+                  <i class="fas fa-microphone"></i> Microphone
+                </option>
+                <option value="external">
+                  <i class="fas fa-headphones"></i> External Device
+                </option>
+                <option value="system">
+                  <i class="fas fa-volume-up"></i> System Audio
+                </option>
+                <option value="mute">
+                  <i class="fas fa-volume-mute"></i> Mute
+                </option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Video Settings -->
+          <div class="setting">
+            <h3>Video Settings</h3>
+            <div class="input-field">
+              <label for="video-resolution">Resolution:</label>
+              <select id="video-resolution">
+                <option value="720p">720p</option>
+                <option value="1080p">1080p</option>
+                <option value="4k">4k</option>
+              </select>
+            </div>
+            <div class="input-field">
+              <label for="video-quality">Quality:</label>
+              <select id="video-quality">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Start Recording Button -->
+        <div class="start-recording">
+          <button class="btn btn-primary">Start Recording</button>
+          <p>Press: <code>Ctrl + Shift + R/S </code> to start/stop recording</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="script.js"></script>
